@@ -1,0 +1,16 @@
+/* estilos/styles.css */
+
+.section-multimedia h2 {
+  font-weight: 700;
+  color: #222;
+}
+
+video {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ratio {
+  overflow: hidden;
+  border-radius: 12px;
+}

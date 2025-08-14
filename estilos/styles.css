@@ -1,0 +1,401 @@
+/* Reset general y fuente principal */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+#logo{
+  width: 100%;
+}
+/* Paleta de colores PB Studio */
+:root {
+  --primary-color: #222831;
+  --accent-color: #00adb5;
+  --light-gray: #eeeeee;
+  --soft-white: #f9f9f9;
+  --font-dark: #121212;
+}
+
+/* Secciones */
+section {
+  padding: 80px 0;
+  background-color: var(--soft-white);
+}
+
+section:nth-of-type(even) {
+  background-color: #fff;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: var(--font-dark);
+  letter-spacing: -0.5px;
+}
+
+h2.text-center {
+  font-size: 2.4rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+h2.text-center::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent-color);
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--accent-color);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #019da3;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 16px;
+  background-color: var(--light-gray);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Iconos de habilidades */
+.card i {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+/* Sobre mí */
+#about img {
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Testimonios */
+blockquote {
+  font-style: italic;
+  color: #b9b8b8;
+  border-left: 2px solid var(--accent-color);
+  padding-left: 1rem;
+}
+
+/* Lista de contacto */
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  padding-left: 0;
+}
+
+.list-group-item a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.list-group-item a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: #ccc;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* Formularios */
+form .form-control {
+  border-radius: 12px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px rgba(0, 173, 181, 0.3);
+}
+
+form .btn {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h2.text-center {
+    font-size: 1.8rem;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+}
+
+#img1{
+  position: relative;
+  background-image: inherit;
+}
+   .carousel {
+      position: relative;
+      max-width: 90%;
+      margin: 60px auto;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .carousel-buttons {
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+
+    .carousel-buttons button {
+      background-color: #22d3ee;
+      border: none;
+      color: #0f172a;
+      font-size: 24px;
+      padding: 10px 18px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .carousel-buttons button:hover {
+      background-color: #0f172a;
+      color: #22d3ee;
+      border: 2px solid #22d3ee;
+    }
+
+    .carousel-title {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 28px;
+      color: #22d3ee;
+    }
+
+    
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  color: #2a5298;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #dbeaff;
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  color: #2a5298;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #dbeaff;
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.blockquote-footer{
+  color: #00adb5;
+}

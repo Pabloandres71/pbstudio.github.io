@@ -1,0 +1,33 @@
+/* estilos/styles.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.hero-section {
+  background: linear-gradient(to right, #111, #333);
+}
+
+#moodboard img {
+  transition: transform 0.3s ease;
+}
+
+#moodboard img:hover {
+  transform: scale(1.05);
+}
+
+.intro-creatividad h2,
+.moodboard h3 {
+  font-weight: 700;
+  color: #222;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
